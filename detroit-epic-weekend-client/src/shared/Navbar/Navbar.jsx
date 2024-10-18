@@ -23,13 +23,13 @@ const NavBar = () => {
         <Link to={"/planYourTrip"}>Plan Your Trip</Link>
       </li>
       <li>
-        <Link to={"/order/salad"}>Blog</Link>
+        <Link to={"/blog"}>Blog</Link>
       </li>
       <li>
-        <Link to={"/order/salad"}>Account </Link>
+        <Link to={"/account"}>Account </Link>
       </li>
       <li>
-        <Link to={"/order/salad"}>Support  </Link>
+        <Link to={"/support"}>Support  </Link>
       </li>
     </>
   );
