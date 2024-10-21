@@ -11,7 +11,7 @@ const useSuccessStory =(id) =>{
     if(id){
 
         useEffect(()=>{
-            fetch(`http://localhost:5000/successStory/${id}`)
+            fetch(`https://detroit-epic-weekend-server.vercel.app/successStory/${id}`)
             .then(res=> res.json())
             .then(data=> {
                 setsuccessStory(data)
@@ -22,7 +22,7 @@ const useSuccessStory =(id) =>{
     else{
 
         useEffect(()=>{
-            fetch('http://localhost:5000/successStory')
+            fetch('https://detroit-epic-weekend-server.vercel.app/successStory')
             .then(res=> res.json())
             .then(data=> {
                 setsuccessStory(data)
