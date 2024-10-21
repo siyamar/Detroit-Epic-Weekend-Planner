@@ -7,6 +7,8 @@ import PlanYourTrip from "../pages/PlanYourTrip/PlanYourTrip";
 import Bolg from "../pages/Blog/Bolg";
 import Account from "../pages/Account/Account";
 import Support from "../pages/Support/Support";
+import Blog from "../pages/Blog/Bolg";
+import BlogDetails from "../components/BlogDetails/BlogDetails";
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +18,6 @@ export const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>,
-            loader: () => fetch("https://keto-diet-server.vercel.app/postBlogs"),
         },
         {
             path: '/planYourTrip',
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
         {
             path: '/blog',
             element: <Bolg></Bolg>
+        },
+        {
+            path: '/blogDetails/:id',
+            element: <BlogDetails></BlogDetails>
         },
         {
             path: '/account',
