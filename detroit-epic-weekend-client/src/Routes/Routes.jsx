@@ -29,7 +29,9 @@ export const router = createBrowserRouter([
         },
         {
             path: '/blogDetails/:id',
-            element: <BlogDetails></BlogDetails>
+            element: <BlogDetails></BlogDetails>,
+            loader: ({ params }) =>
+              fetch(`https://detroit-epic-weekend-server.vercel.app/successStory/${params.id}`),
         },
         {
             path: '/account',
